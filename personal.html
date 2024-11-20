@@ -31,11 +31,11 @@
         <div class="tab-pane fade show active" id="datos-tab-pane" role="tabpanel" aria-labelledby="datos-tab">
             <form class="row g-5  mt-2  align-items-center">
                 <div class="d-flex justify-content-between align-items-center">
-                <div class="col-2">
+                <div class="col-4 col-sm-3 col-md-2 col-lg-1">
                   <label for="codemple" class="form-label">Codigo:</label>
                   <input type="text" class="form-control" id="codemple" requiered>
                 </div>
-                <div class="col-1 text-end">
+                <div class="col-sm-3 col-md-2 col-lg-1 text-end mt-4">
                     <select class="form-select" aria-label="Default select example">
                         <option selected>Estado</option>
                         <option value="1">Activo</option>
@@ -44,25 +44,110 @@
                       </select>
                   </div>
                 </div>
-                <div class="row gx-5 mt-4 pb-4 align-items-center border-bottom">
-                    <div class="col-4">
+                <div class="row gx-5 mt-4 pb-5 align-items-center border-bottom">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <label for="nomemple" class="form-label">Nombre:</label>
                         <input type="text" class="form-control" id="nomemple">
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-md-6 col-lg-3">
                         <label for="curpe" class="form-label">CURP:</label>
                         <input type="text" class="form-control" id="curpe">
                     </div>
-                    <div class="col-2">
+                    <div class="col-12 col-md-6 col-lg-3">
                         <label for="rfce" class="form-label">RFC:</label>
                         <input type="text" class="form-control" id="rfce">
                     </div>
-                    <div class="col-2">
+                    <div class="col-12 col-md-3 col-lg-2">
                         <label for="nacie" class="form-label">Nacimiento:</label>
                         <input type="date" class="form-control" id="nacie">
                     </div>
+                    <div class="col-4 col-md-3 col-lg-1 mt-3">
+                      <label for="edade" class="form-label">Edad:</label>
+                      <input type="text" class="form-control" id="edade">
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3 mt-3">
+                    <label for="entie" class="form-label">Entidad:</label>
+                    <input type="text" class="form-control" id="entie">
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2 mt-3">
+                    <label for="generoe" class="form-label">Genero:</label>
+                    <select class="form-select" aria-label="Default select example" id="generoe">
+                        <option selected>Selecciona</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Femenino</option>
+                      </select>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2 mt-3">
+                    <label for="escivie" class="form-label">Estado Civil:</label>
+                    <input type="text" class="form-control" id="escivie">
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2 mt-3">
+                    <label for="fingre" class="form-label">Ingreso:</label>
+                    <input type="date" class="form-control" id="fingre">
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2 mt-3">
+                    <label for="fbaja" class="form-label">Baja:</label>
+                    <input type="date" class="form-control" id="fbaja">
+                  </div>
                 </div>
-               
+
+                <div class="row gx-5 mt-5 pb-5 align-items-center border-bottom">
+                  <div class="col-12 col-md-6 col-lg-2 mt-3">
+                      <label for="telem" class="form-label">Telefono:</label>
+                      <input type="text" class="form-control" id="telem">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-2 mt-3">
+                      <label for="telcele" class="form-label">Celular:</label>
+                      <input type="text" class="form-control" id="telcele">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 mt-3">
+                      <label for="correoe" class="form-label">Correo:</label>
+                      <input type="text" class="form-control" id="correoe">
+                  </div>
+                  <div class="col-6 col-md-3 col-lg-2 mt-3">
+                    <label for="cpe" class="form-label">Codigo Postal:</label>
+                    <input type="text" class="form-control" id="cpe">
+                 </div>
+                  <div class="col-6 col-md-3 col-lg-2 mt-3">
+                    <label for="confcpe" class="form-label">Confirmar CP:</label>
+                    <input type="text" class="form-control" id="confcpe">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6 mt-3">
+                    <label for="dome" class="form-label">Domicilio</label>
+                    <textarea class="form-control" id="dome" rows="3"></textarea>
+                  </div>
+
+                  
+              </div>
+              <div class="row gx-5 mt-5 pb-5 align-items-center border-bottom">
+                <div class="col-12 col-md-6 col-lg-3 mt-3">
+                    <label for="nss" class="form-label">Numero de seguridad Social:</label>
+                    <input type="text" class="form-control" id="nss">
+                </div>
+                <div class="col-12 col-md-4 col-lg-2 mt-3">
+                    <label for="faimss" class="form-label">Alta IMSS:</label>
+                    <input type="Date" class="form-control" id="faimss">
+                </div>
+                <div class="col-12 col-md-3 col-lg-2 mt-3">
+                    <label for="sueldoe" class="form-label">Sueldo:</label>
+                    <input type="text" class="form-control" id="sueldoe">
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 mt-3">
+                  <label for="bancoe" class="form-label">Banco:</label>
+                  <input type="text" class="form-control" id="bancoe">
+               </div>
+                <div class="col-12 col-md-6 col-lg-2 mt-3">
+                  <label for="cuentabe" class="form-label">Cuenta Banco:</label>
+                  <input type="text" class="form-control" id="cuentabe">
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-3">
+                  <label for="cuenclabe" class="form-label">Cuenta CLABE:</label>
+                  <input type="text" class="form-control" id="cuenclabe">
+                </div>
+                <div class="col-4 col-md-2 col-lg-1 mt-3">
+                  <label for="cuenclabe" class="form-label">BBVA:</label>
+                  <input type="text" class="form-control" id="cuenclabe">
+                </div>
               </form>
         </div>
         <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
