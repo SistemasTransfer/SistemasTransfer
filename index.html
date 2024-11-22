@@ -8,20 +8,19 @@
     <link href="personalicss.css" rel="stylesheet">
     
     <title>TRANSFERBOX</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body class="p-3 m-0 border-0 bd-example m-0 border-0">
 
     <!-- Example Code --> 
     <nav class="navbar bg-colpurple-400 fixed-top p-3">
       <div class="container-fluid">
-        <a class="navbar-brand text-light" href="#" onclick="cargarIframe('inicio')">TransferBox</a>
+        <a class="navbar-brand text-light" href="#" onclick="cargarIframe('inicio')"><img src="./img/logonavbar.png" alt="Logo" width="55" height="40" class="d-inline-block align-text-Center">TRANSFERBOX</a>
         <button class="navbar-toggler bg-colindigo-200" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header bg-colpurple-400">
-            <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">TransferBox</h5>
+            <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel"><img src="./img/logonavbar.png" alt="Logo" width="55" height="40" class="d-inline-block align-text-Center">TRANSFERBOX</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body bg-light">
@@ -86,9 +85,9 @@
       
       // Cambiar el src del iframe según la opción seleccionada
       if (pagina === 'mercadolibre') {
-        iframe.src = "personal.html"; // URL de Mercado Libre
+        iframe.src = "tabla_personal.html"; // URL de Mercado Libre
       } else if (pagina === 'amazon') {
-        iframe.src = "https://www.amazon.com.mx/?tag=msndeskabkmx-20&ref=pd_sl_7q4oo91e8o_e&adgrpid=1161084699046438&hvadid=72568048927387&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=166066&hvtargid=kwd-72568144493216:loc-119&hydadcr=13958_13417251"; // URL de Amazon
+        iframe.src = "tabla_personal.html"; // URL de Amazon
       } else if (pagina === 'administrativo') {
         iframe.src = "https://www.example.com"; // URL de la sección Administrativo (puedes poner la URL que desees)
       } else if (pagina === 'inicio') {
@@ -97,4 +96,5 @@
     }
 
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </html>
