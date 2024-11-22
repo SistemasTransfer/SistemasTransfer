@@ -27,8 +27,8 @@ const listUsers = async () => {
         users.forEach((user) => {
             content += `
             <tr>
-                <td><a href="SistemasTransfer/personal.html?id=${user.id}" class="text-decoration-none text-black" >${user.id}</a></td> 
-                <td><a href="SistemasTransfer/personal.html?id=${user.id}" class="text-decoration-none text-black">${user.name}</a></td>
+                <td><a href="personal.html?id=${user.id}" class="text-decoration-none text-black">${user.id}</a></td>
+                <td><a href="personal.html?id=${user.id}" class="text-decoration-none text-black">${user.name}</a></td>
                 <td>${user.address.city}</td>
                 <td>${user.email}</td>
                 <td>${user.phone}</td>
