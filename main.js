@@ -27,7 +27,7 @@ const listUsers = async () => {
         users.forEach((user) => {
             content += `
             <tr>
-                https://sistemastransfer.github.io/SistemasTransfer/personal.html?id=1" class="text-decoration-none text-black">${user.id}</a></td>
+                https://sistemastransfer.github.io/SistemasTransfer/personal.html?" class="text-decoration-none text-black">${user.id}</a></td>
                 <td><a href="personal.html?id=${user.id}" class="text-decoration-none text-black">${user.name}</a></td>
                 <td>${user.address.city}</td>
                 <td>${user.email}</td>
