@@ -17,3 +17,8 @@
         font-size: 0.9rem;
         color: gray;
       }
+      
+      .centered{
+        text-align: center !important;
+        vertical-align: middle !important;
+      }
