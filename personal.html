@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="personalicss.css" rel="stylesheet">
+    
+    <title>Personal</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container mt-5 pt-5">
+    <h1>PERSONAL</h1>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="datos-tab" data-bs-toggle="tab" data-bs-target="#datos-tab-pane" type="button" role="tab" aria-controls="datos-tab-pane" aria-selected="true">Datos</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Beneficiario</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Documentos</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Disabled</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="datos-tab-pane" role="tabpanel" aria-labelledby="datos-tab">
+            <form class="row g-5  align-items-center">
+              <div class="col-12 border-bottom text-end">
+                <button type="button"class="btn btn-md btn-primary text-white m-3" >Editar</button>
+                <button type="button"class="btn btn-md btn-danger text-white m-3" >Eliminar</button>
+                <button type="button"class="btn btn-md btn-colindigo-200 text-white m-3" >Guardar</button>
+              </div>
+                <div class="d-flex justify-content-between align-items-center">
+                <div class="col-4 col-sm-3 col-md-2 col-lg-1">
+                  <label for="codemple" class="form-label"><Strong>Codigo:</Strong></label>
+                  <input type="text" class="form-control" id="codemple" requiered>
+                </div>
+                <div class="col-sm-3 col-md-2 col-lg-1 text-end mt-4">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Estado</option>
+                        <option value="1">Activo</option>
+                        <option value="2">Nuevo</option>
+                        <option value="3">Baja</option>
+                      </select>
+                  </div>
+                </div>
+                <div class="row gx-5 mt-4 pb-5 align-items-center border-bottom">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <label for="nomemple" class="form-label"><strong>Nombre:</strong></label>
+                        <input type="text" class="form-control" id="nomemple">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <label for="curpe" class="form-label"><strong>CURP:</strong></label>
+                        <input type="text" class="form-control" id="curpe">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <label for="rfce" class="form-label"><strong>RFC:</strong></label>
+                        <input type="text" class="form-control" id="rfce">
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-2">
+                        <label for="nacie" class="form-label"><strong>Nacimiento:</strong></label>
+                        <input type="date" class="form-control" id="nacie">
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-1 mt-3">
+                      <label for="edade" class="form-label"><strong>Edad:</strong></label>
+                      <input type="text" class="form-control" id="edade">
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3 mt-3">
+                    <label for="entie" class="form-label"><strong>Entidad:</strong></label>
+                    <input type="text" class="form-control" id="entie">
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2 mt-3">
+                    <label for="generoe" class="form-label"><strong>Genero:</strong></label>
+                    <select class="form-select" aria-label="Default select example" id="generoe">
+                        <option selected>Selecciona</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Femenino</option>
+                      </select>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2 mt-3">
+                    <label for="escivie" class="form-label"><strong>Estado Civil:</strong></label>
+                    <input type="text" class="form-control" id="escivie">
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2 mt-3">
+                    <label for="fingre" class="form-label"><strong>Ingreso:</strong></label>
+                    <input type="date" class="form-control" id="fingre">
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2 mt-3">
+                    <label for="fbaja" class="form-label"><strong>Baja:</strong></label>
+                    <input type="date" class="form-control" id="fbaja">
+                  </div>
+                </div>
+
+                <div class="row gx-5 mt-5 pb-5 align-items-center border-bottom">
+                  <div class="col-12 col-md-6 col-lg-2 mt-3">
+                      <label for="telem" class="form-label"><strong>Telefono:</strong></label>
+                      <input type="text" class="form-control" id="telem">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-2 mt-3">
+                      <label for="telcele" class="form-label"><strong>Celular:</strong></label>
+                      <input type="text" class="form-control" id="telcele">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 mt-3">
+                      <label for="correoe" class="form-label"><strong>Correo:</strong></label>
+                      <input type="text" class="form-control" id="correoe">
+                  </div>
+                  <div class="col-6 col-md-3 col-lg-2 mt-3">
+                    <label for="cpe" class="form-label"><strong>Codigo Postal:</strong></label>
+                    <input type="text" class="form-control" id="cpe">
+                 </div>
+                  <div class="col-6 col-md-3 col-lg-2 mt-3">
+                    <label for="confcpe" class="form-label"><strong>Confirmar CP:</strong></label>
+                    <input type="text" class="form-control" id="confcpe">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6 mt-3">
+                    <label for="dome" class="form-label"><strong>Domicilio:</strong></label>
+                    <textarea class="form-control" id="dome" rows="3"></textarea>
+                  </div>
+
+                  
+              </div>
+              <div class="row gx-5 mt-5 pb-5 align-items-center border-bottom">
+                <div class="col-12 col-md-6 col-lg-3 mt-3">
+                    <label for="nss" class="form-label"><strong>Numero de seguridad Social:</strong></label>
+                    <input type="text" class="form-control" id="nss">
+                </div>
+                <div class="col-12 col-md-4 col-lg-2 mt-3">
+                    <label for="faimss" class="form-label"><strong>Alta IMSS:</strong></label>
+                    <input type="Date" class="form-control" id="faimss">
+                </div>
+                <div class="col-12 col-md-3 col-lg-2 mt-3">
+                    <label for="sueldoe" class="form-label"><strong>Sueldo:</strong></label>
+                    <input type="text" class="form-control" id="sueldoe">
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 mt-3">
+                  <label for="bancoe" class="form-label"><strong>Banco:</strong></label>
+                  <input type="text" class="form-control" id="bancoe">
+               </div>
+                <div class="col-12 col-md-6 col-lg-2 mt-3">
+                  <label for="cuentabe" class="form-label"><strong>Cuenta Banco:</strong></label>
+                  <input type="text" class="form-control" id="cuentabe">
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-3">
+                  <label for="cuenclabe" class="form-label"><strong>Cuenta CLABE:</strong></label>
+                  <input type="text" class="form-control" id="cuenclabe">
+                </div>
+                <div class="col-4 col-md-2 col-lg-1 mt-3">
+                  <label for="bbvae" class="form-label"><strong>BBVA:</strong></label>
+                  <input type="text" class="form-control" id="bbvae">
+                </div>
+                <div class="col-6 col-md-2 col-lg-2 mt-3">
+                  <label for="tallae" class="form-label"><strong>Talla:</strong></label>
+                  <input type="text" class="form-control" id="tallae">
+                </div>
+              </form>
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+      </div>
+    </div>
+  </body>
+</html>

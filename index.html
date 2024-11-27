@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="styles.css" rel="stylesheet">
+    <link href="personalicss.css" rel="stylesheet">
+    
+    <title>TRANSFERBOX</title>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+    <!-- Example Code --> 
+    <nav class="navbar bg-colpurple-400 fixed-top p-3">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#" onclick="cargarIframe('inicio')"><img src="./img/logonavbar.png" alt="Logo" width="55" height="40" class="d-inline-block align-text-Center"><strong>TRANSFERBOX</strong></a>
+        <button class="navbar-toggler bg-colindigo-200" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header bg-colpurple-400">
+            <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel"><img src="./img/logonavbar.png" alt="Logo" width="55" height="40" class="d-inline-block align-text-Center">TRANSFERBOX</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body bg-light">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="#" onclick="cargarIframe('inicio')" data-bs-dismiss="offcanvas"><i class="fa-solid fa-list-check"></i> <strong>Inicio</strong> </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-person"></i> <strong> Personal</strong>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item dropdown">
+                  <li><a class="dropdown-item" href="#" onclick="cargarIframe('mercadolibre')" data-bs-dismiss="offcanvas">Mercado Libre</a></li>
+                  </li>
+                </li>
+                  <hr class="dropdown-divider">
+                  <li><a class="dropdown-item" href="#" onclick="cargarIframe('amazon')" data-bs-dismiss="offcanvas">Amazon</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#" onclick="cargarIframe('administrativo')" data-bs-dismiss="offcanvas"> Administrativo</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-truck-front"></i> <strong> Unidades</strong>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Mercado Libre</a></li>
+                  <hr class="dropdown-divider">
+                  <li><a class="dropdown-item" href="#">Amazon</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Administrativo</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-building"></i> <strong>Estaciones</strong>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Mercado Libre</a></li>
+                  <hr class="dropdown-divider">
+                  <li><a class="dropdown-item" href="#">Amazon</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Administrativo</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-colpurple-400" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container my-5 p-3">
+      <!-- iframe donde se cargará el contenido -->
+      <iframe id="content-frame" src="tarea.html" style="position: absolute; top: 0; left: 0; width: 100%; height: 100vh; border: none;"></iframe>
+    </div>
+    <!-- End Example Code -->
+  </body>
+  <script>
+    // Función para cargar diferentes páginas dentro del iframe
+    function cargarIframe(pagina) {
+      let iframe = document.getElementById("content-frame");
+      
+      // Cambiar el src del iframe según la opción seleccionada
+      if (pagina === 'mercadolibre') {
+        iframe.src = "tabla_personal.html"; // URL de Mercado Libre
+      } else if (pagina === 'amazon') {
+        iframe.src = "tabla_personal.html"; // URL de Amazon
+      } else if (pagina === 'administrativo') {
+        iframe.src = "https://www.example.com"; // URL de la sección Administrativo (puedes poner la URL que desees)
+      } else if (pagina === 'inicio') {
+        iframe.src = "tarea.html"; // URL de la sección Administrativo (puedes poner la URL que desees)
+      }
+    }
+
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>

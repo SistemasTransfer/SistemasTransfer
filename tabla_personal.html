@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLA PERSONAL</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <link href="personalicss.css" rel="stylesheet">
+
+<!-- DataTables CSS para Bootstrap 5 -->
+<link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <div class="container mt-4 pt-5">
+        <h1 class="text-center">PERSONAL</h1>
+        <div class="text-end">
+            <button type="button"class="btn btn-md btn-colindigo-200 text-white m-3" onclick="location.href='personal.html'">Agregar Nuevo</button>
+        </div>
+        <table id="datatable_users" class="table table-striped">
+            <thead>
+                <tr>
+                    <th class="centered">ID</th>
+                    <th class="centered">Nombre</th>
+                    <th class="centered">Ciudad</th>
+                    <th class="centered">Email</th>
+                    <th class="centered">Teléfono</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="tableBody_users">
+                <!-- El contenido será generado dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+    <!-- Bootstrap 5 JS -->
+  <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables JS -->
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+
+    <!-- Tu script -->
+    <script src="main.js"></script>
+</body>
+</html>
